@@ -1,0 +1,893 @@
+{
+  "site_settings": {
+    "id": 1,
+    "site_name": "REIGN STUDY HUB LTD",
+    "tagline": "Your Global Education Partner",
+    "parent_company": "A subsidiary of PIS INT'L SYNERGY LTD",
+    "logo_url": "/assets/logo-header.png",
+    "email": "reignstudyabroad@gmail.com",
+    "whatsapp_number": "2348034239813",
+    "phone_numbers": [
+      "+234 803 423 9813",
+      "+44 7480 251588"
+    ],
+    "addresses": [
+      {
+        "label": "Head Office – Buguma City",
+        "address": "No. 15 Jackreece Compound, King Amachree Road, Buguma City, Asari-Toru LGA, Rivers State, Nigeria."
+      },
+      {
+        "label": "Port Harcourt Branch",
+        "address": "No. 5 Opili Plaza, By Guinness Warehouse, Azuabie Town, Okujagu, Trans Amadi, Port Harcourt, Rivers State.  Office: +234 802 562 4934"
+      },
+      {
+        "label": "Lagos Branch",
+        "address": "98 Fagbemi Street, Ayanre-Ibiye, Along Agbara-Badagry Road, Lagos State.  Tel: +234 803 423 9813"
+      }
+    ],
+    "working_hours": "",
+    "social_links": {},
+    "stats": [],
+    "about_text": "REIGN STUDY HUB LTD is an international education consultancy dedicated to helping students access quality educational opportunities in reputable institutions around the world. As a subsidiary of PIS INT'L SYNERGY LTD, we guide prospective students through the study-abroad process — from choosing suitable universities and programmes to preparing admission applications and understanding student visa requirements.\n\nWe understand that pursuing an education abroad is a significant investment in your future. Our goal is to make the process more organised, accessible and understandable by providing guidance tailored to your academic background, career interests, destination preferences and financial circumstances.",
+    "vision_text": "To become a trusted international education consultancy connecting students with global learning opportunities and successful futures.",
+    "mission_text": "Accessible, reliable and student-focused guidance for university admissions, scholarships and study visa preparation.",
+    "values_text": "Professionalism · Integrity · Student Support · Excellence · Accessibility · Accountability",
+    "processing_fee": "",
+    "map_embed_url": "",
+    "privacy_text": "",
+    "application_process": [
+      {
+        "title": "Initial Consultation",
+        "description": "Share your academic background, destination, course, level and budget."
+      },
+      {
+        "title": "Eligibility Assessment",
+        "description": "Qualifications reviewed against published university requirements."
+      },
+      {
+        "title": "University & Programme Selection",
+        "description": "Suitable options identified based on your profile."
+      },
+      {
+        "title": "Document Preparation",
+        "description": "Guidance on documents required for your programme."
+      },
+      {
+        "title": "Application Submission",
+        "description": "Application prepared and submitted with your authorisation."
+      },
+      {
+        "title": "Follow-up & Admission Offer",
+        "description": "Progress updates and guidance on understanding the offer."
+      },
+      {
+        "title": "Study Visa Preparation",
+        "description": "Document requirements for your chosen destination."
+      },
+      {
+        "title": "Pre-Departure Support",
+        "description": "Enrolment, accommodation, travel and arrival preparation."
+      },
+      {
+        "title": "Ongoing Guidance",
+        "description": "Continued support as you settle into your studies."
+      }
+    ],
+    "document_checklists": []
+  },
+  "services": [
+    {
+      "slug": "university-course-selection",
+      "title": "University & Course Selection",
+      "short_description": "Find the right university and programme for you.",
+      "content": "Find the right university and programme for you.",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Radcliffe_Camera%2C_Oxfordshire.jpg/960px-Radcliffe_Camera%2C_Oxfordshire.jpg",
+      "is_published": true,
+      "sort_order": 0
+    },
+    {
+      "slug": "admission-assistance",
+      "title": "Admission Assistance",
+      "short_description": "Step-by-step support with your application.",
+      "content": "Step-by-step support with your application.",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/20130808_Kings_College_Chapel_01.jpg/1280px-20130808_Kings_College_Chapel_01.jpg",
+      "is_published": true,
+      "sort_order": 1
+    },
+    {
+      "slug": "scholarship-guidance",
+      "title": "Scholarship Guidance",
+      "short_description": "Explore funding opportunities.",
+      "content": "Explore funding opportunities.",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/University_of_Salamanca.jpg",
+      "is_published": true,
+      "sort_order": 2
+    },
+    {
+      "slug": "study-visa-guidance",
+      "title": "Study Visa Guidance",
+      "short_description": "Understand requirements and get prepared.",
+      "content": "Understand requirements and get prepared.",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/The_University_of_Coimbra_Courtyard_and_Bell_Tower.jpg/960px-The_University_of_Coimbra_Courtyard_and_Bell_Tower.jpg",
+      "is_published": true,
+      "sort_order": 3
+    },
+    {
+      "slug": "pre-departure-support",
+      "title": "Pre-Departure Support",
+      "short_description": "Be ready for your journey abroad.",
+      "content": "Be ready for your journey abroad.",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/20130215_Kings_College_Chapel_Hi-res_01.jpg/1280px-20130215_Kings_College_Chapel_Hi-res_01.jpg",
+      "is_published": true,
+      "sort_order": 4
+    }
+  ],
+  "destinations": [
+    {
+      "name": "Canada",
+      "flag_emoji": "🇨🇦",
+      "is_active": true,
+      "sort_order": 0,
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Toronto_Skyline%2C_Ontario_Canada.jpg/1280px-Toronto_Skyline%2C_Ontario_Canada.jpg",
+      "description": "Study in Canada",
+      "requirements": [
+        "International passport biodata page",
+        "Passport photograph, where requested",
+        "Secondary school certificates and results",
+        "University certificates and transcripts",
+        "Curriculum vitae, where requested",
+        "Statement of purpose or study plan",
+        "English-language proficiency evidence",
+        "Admission letter and enrolment information",
+        "Financial support information",
+        "Accommodation information, where applicable",
+        "Additional institution-specific documents"
+      ]
+    },
+    {
+      "name": "United Kingdom",
+      "flag_emoji": "🇬🇧",
+      "is_active": true,
+      "sort_order": 1,
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/20130808_Kings_College_Chapel_01.jpg/1280px-20130808_Kings_College_Chapel_01.jpg",
+      "description": "Study in the UK",
+      "requirements": [
+        "International passport biodata page",
+        "Academic certificates and transcripts",
+        "University admission information",
+        "Course and programme details",
+        "English-language proficiency evidence",
+        "Financial support information",
+        "Accommodation information, where applicable",
+        "Academic or professional references",
+        "Additional programme-specific documents"
+      ]
+    },
+    {
+      "name": "Spain",
+      "flag_emoji": "🇪🇸",
+      "is_active": true,
+      "sort_order": 2,
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/University_of_Salamanca.jpg",
+      "description": "Study in Spain",
+      "requirements": [
+        "International passport biodata page",
+        "Academic certificates and transcripts",
+        "Admission or enrolment information",
+        "Language proficiency evidence, where required",
+        "Financial support information",
+        "Accommodation information",
+        "Health insurance information, where applicable",
+        "Certified translations or document authentication",
+        "Additional institution-specific documents"
+      ]
+    },
+    {
+      "name": "Turkey",
+      "flag_emoji": "🇹🇷",
+      "is_active": true,
+      "sort_order": 3,
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/The_skyline_of_Istanbul.JPG/1280px-The_skyline_of_Istanbul.JPG",
+      "description": "Study in Turkey",
+      "requirements": [
+        "International passport biodata page",
+        "Passport photograph",
+        "Secondary school certificates and results",
+        "University certificates and transcripts",
+        "Preferred university and programme details",
+        "Language proficiency evidence, where required",
+        "Motivation letter, where requested",
+        "Financial support information, where applicable",
+        "Additional university-specific documents"
+      ]
+    },
+    {
+      "name": "Poland",
+      "flag_emoji": "🇵🇱",
+      "is_active": true,
+      "sort_order": 4,
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Downtown_Warsaw.jpg/1280px-Downtown_Warsaw.jpg",
+      "description": "Study in Poland",
+      "requirements": [
+        "International passport biodata page",
+        "Academic certificates and transcripts",
+        "University admission information",
+        "Language proficiency evidence, where required",
+        "Curriculum vitae, where requested",
+        "Motivation letter, where required",
+        "Financial support information",
+        "Accommodation information",
+        "Insurance information, where applicable",
+        "Additional institution-specific documents"
+      ]
+    },
+    {
+      "name": "Cyprus",
+      "flag_emoji": "🇨🇾",
+      "is_active": true,
+      "sort_order": 5,
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Paphos_view.jpg",
+      "description": "Study in Cyprus",
+      "requirements": [
+        "International passport biodata page",
+        "Passport photograph",
+        "Secondary school certificates and results",
+        "University degree certificates and transcripts",
+        "Admission and enrolment information",
+        "Language proficiency evidence, where required",
+        "Financial support information",
+        "Accommodation information",
+        "Additional university-specific forms and documents"
+      ]
+    },
+    {
+      "name": "North Cyprus",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 6,
+      "image_url": "",
+      "description": "",
+      "requirements": [
+        "International passport biodata page",
+        "Passport photograph",
+        "Secondary school certificates and results",
+        "University degree certificates and transcripts",
+        "Admission and enrolment information",
+        "Language proficiency evidence, where required",
+        "Financial support information",
+        "Accommodation information",
+        "Additional university-specific forms and documents"
+      ]
+    },
+    {
+      "name": "England",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 7,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Scotland",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 8,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Wales",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 9,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Northern Ireland",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 10,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Germany",
+      "flag_emoji": "🇩🇪",
+      "is_active": true,
+      "sort_order": 11,
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Berlin_Skyline_Architecture_City_Germany_Lights.jpg/1280px-Berlin_Skyline_Architecture_City_Germany_Lights.jpg",
+      "description": "Study in Germany",
+      "requirements": []
+    },
+    {
+      "name": "Finland",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 12,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Italy",
+      "flag_emoji": "🇮🇹",
+      "is_active": true,
+      "sort_order": 13,
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Colosseum_of_Rome%2C_Italy.jpg/1280px-Colosseum_of_Rome%2C_Italy.jpg",
+      "description": "Study in Italy",
+      "requirements": []
+    },
+    {
+      "name": "Hungary",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 14,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "France",
+      "flag_emoji": "🇫🇷",
+      "is_active": true,
+      "sort_order": 15,
+      "image_url": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=700&q=85",
+      "description": "Study in France",
+      "requirements": []
+    },
+    {
+      "name": "Netherlands",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 16,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Sweden",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 17,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Norway",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 18,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Denmark",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 19,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Belgium",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 20,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Austria",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 21,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Portugal",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 22,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Ireland",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 23,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Switzerland",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 24,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Czech Republic",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 25,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Romania",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 26,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Greece",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 27,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Malta",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 28,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "United States of America",
+      "flag_emoji": "🇺🇸",
+      "is_active": true,
+      "sort_order": 29,
+      "image_url": "",
+      "description": "Study in USA",
+      "requirements": []
+    },
+    {
+      "name": "Mexico",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 30,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "South Africa",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 31,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Ghana",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 32,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Egypt",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 33,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Kenya",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 34,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Mauritius",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 35,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "South Korea",
+      "flag_emoji": "🇰🇷",
+      "is_active": true,
+      "sort_order": 36,
+      "image_url": "https://images.unsplash.com/photo-1517154421773-05222d4e8780?w=700&q=85",
+      "description": "Study in South Korea",
+      "requirements": []
+    },
+    {
+      "name": "China",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 37,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Japan",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 38,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Malaysia",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 39,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Singapore",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 40,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "United Arab Emirates",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 41,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    },
+    {
+      "name": "Other / Open to recommendations",
+      "flag_emoji": "",
+      "is_active": true,
+      "sort_order": 42,
+      "image_url": "",
+      "description": "",
+      "requirements": []
+    }
+  ],
+  "slides": [
+    {
+      "tagline": "Your Global Education Partner",
+      "headline": "Your Global Education Partner",
+      "subtext": "We help you achieve your dream of studying abroad with expert guidance, trusted support and a clear path to your future.",
+      "image_url": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1600&q=80&auto=format&fit=crop",
+      "cta_label": "Apply Now",
+      "cta_link": "/apply",
+      "sort_order": 0,
+      "is_active": true
+    },
+    {
+      "tagline": "Your Global Education Partner",
+      "headline": "Empowering Your Global Education Journey",
+      "subtext": "Find the right university and programme for you.",
+      "image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1600&q=80&auto=format&fit=crop",
+      "cta_label": "Explore Destinations",
+      "cta_link": "/destinations",
+      "sort_order": 1,
+      "is_active": true
+    },
+    {
+      "tagline": "Your Global Education Partner",
+      "headline": "Ready to Start Your Journey?",
+      "subtext": "Get expert guidance and begin your application today.",
+      "image_url": "/assets/hero-atlas-vintage.png",
+      "cta_label": "Book Appointment",
+      "cta_link": "/book-appointment",
+      "sort_order": 2,
+      "is_active": true
+    }
+  ],
+  "team_members": [
+    {
+      "name": "Osepribo T.S. Jackrich",
+      "role": "Founder / CEO",
+      "bio": "Welcome to REIGN STUDY HUB LTD! We are delighted to have you here. Please explore our website for detailed information on our educational offerings. Our team is available to assist and provide guidance. Thank you for choosing us — we look forward to a partnership filled with success and memorable experiences.",
+      "image_url": "/assets/founder.jpg",
+      "sort_order": 0,
+      "is_published": true
+    }
+  ],
+  "programme_levels": [
+    {
+      "name": "Vocational/Diploma",
+      "is_active": true,
+      "sort_order": -1
+    },
+    {
+      "name": "Foundation",
+      "is_active": true,
+      "sort_order": 1
+    },
+    {
+      "name": "Certificate",
+      "is_active": true,
+      "sort_order": 2
+    },
+    {
+      "name": "Diploma",
+      "is_active": true,
+      "sort_order": 3
+    },
+    {
+      "name": "HND",
+      "is_active": true,
+      "sort_order": 4
+    },
+    {
+      "name": "Undergraduate / Bachelor's",
+      "is_active": true,
+      "sort_order": 5
+    },
+    {
+      "name": "Postgraduate Diploma",
+      "is_active": true,
+      "sort_order": 6
+    },
+    {
+      "name": "Master's Degree",
+      "is_active": true,
+      "sort_order": 7
+    },
+    {
+      "name": "MBA",
+      "is_active": true,
+      "sort_order": 8
+    },
+    {
+      "name": "PhD / Doctoral",
+      "is_active": true,
+      "sort_order": 9
+    },
+    {
+      "name": "Other",
+      "is_active": true,
+      "sort_order": 10
+    }
+  ],
+  "appointment_service_types": [
+    {
+      "name": "University & Course Selection",
+      "is_active": true,
+      "sort_order": 0
+    },
+    {
+      "name": "Admission Assistance",
+      "is_active": true,
+      "sort_order": 1
+    },
+    {
+      "name": "Scholarship Guidance",
+      "is_active": true,
+      "sort_order": 2
+    },
+    {
+      "name": "Study Visa Guidance",
+      "is_active": true,
+      "sort_order": 3
+    },
+    {
+      "name": "Pre-Departure Support",
+      "is_active": true,
+      "sort_order": 4
+    }
+  ],
+  "course_options": [
+    "Business Administration",
+    "Accounting",
+    "Finance",
+    "Economics",
+    "Marketing",
+    "International Business",
+    "Human Resource Management",
+    "Project Management",
+    "MBA",
+    "Computer Science",
+    "Information Technology",
+    "Software Engineering",
+    "Data Science",
+    "Artificial Intelligence",
+    "Cybersecurity",
+    "Cloud Computing",
+    "Machine Learning",
+    "Civil Engineering",
+    "Mechanical Engineering",
+    "Electrical Engineering",
+    "Petroleum Engineering",
+    "Industrial Engineering",
+    "Renewable Energy Engineering",
+    "Medicine",
+    "Nursing",
+    "Public Health",
+    "Pharmacy",
+    "Biomedical Science",
+    "Biotechnology",
+    "International Relations",
+    "Law",
+    "Psychology",
+    "Education",
+    "Public Policy",
+    "Architecture",
+    "Hospitality Management",
+    "Tourism Management",
+    "Mass Communication",
+    "Agriculture",
+    "Environmental Science",
+    "Other Course / Programme"
+  ],
+  "intakes": [
+    "January / February",
+    "March / April",
+    "May / June",
+    "September / October",
+    "November",
+    "Next Available Intake",
+    "Flexible"
+  ],
+  "budgets": [
+    "Below US$3,000",
+    "US$3,000 – US$5,000",
+    "US$5,001 – US$8,000",
+    "US$8,001 – US$12,000",
+    "US$12,001 – US$18,000",
+    "US$18,001 – US$25,000",
+    "Above US$25,000",
+    "Seeking Scholarship / Funding Guidance"
+  ],
+  "faqs": [
+    {
+      "id": "10000000-0000-4000-8000-000000000001",
+      "question": "How do I start my study-abroad journey?",
+      "answer": "Start by booking a consultation or completing our application form. Share your academic background, preferred course, intended destination and budget so we can discuss suitable next steps.",
+      "sort_order": 1,
+      "is_published": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000002",
+      "question": "Can you help me choose a course and university?",
+      "answer": "Yes. Our university and course selection service helps you compare options against your qualifications, interests and career goals. Bring your academic records and a shortlist of subjects you enjoy to your consultation.",
+      "sort_order": 2,
+      "is_published": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000003",
+      "question": "Which documents should I prepare?",
+      "answer": "A useful starting folder includes your passport, academic certificates, transcripts and CV. Depending on the programme, you may also need references, a personal statement, a portfolio or evidence of English proficiency. Your final checklist will depend on the institution and destination.",
+      "sort_order": 3,
+      "is_published": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000004",
+      "question": "Can I apply for undergraduate and postgraduate study?",
+      "answer": "We support enquiries for different levels of study. Tell us your highest qualification and the programme you are interested in so we can help you explore appropriate options.",
+      "sort_order": 4,
+      "is_published": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000005",
+      "question": "Do I need an English language test?",
+      "answer": "This depends on the university, programme and your previous education. Some applications require a recognised test while others may accept alternative evidence. Confirm the specific requirement before booking a test.",
+      "sort_order": 5,
+      "is_published": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000006",
+      "question": "Can you help me explore scholarships?",
+      "answer": "We can help you explore scholarship opportunities and prepare supporting application materials. Availability, eligibility and selection vary, so plan a budget that does not depend on receiving an award.",
+      "sort_order": 6,
+      "is_published": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000007",
+      "question": "How early should I begin preparing?",
+      "answer": "Begin as early as you can, allowing time to compare programmes, gather documents and prepare applications. Each institution has its own deadlines, so work backwards from your intended intake and leave room for unexpected delays.",
+      "sort_order": 7,
+      "is_published": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000008",
+      "question": "Does an admission offer guarantee a student visa?",
+      "answer": "No. Admission and visa decisions are separate. We offer study visa preparation support, but decisions are made by the relevant authorities and cannot be guaranteed.",
+      "sort_order": 8,
+      "is_published": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000009",
+      "question": "What should I budget for besides tuition?",
+      "answer": "Include accommodation, food, transport, insurance, travel, application charges and any required tests in your planning. Keep a contingency fund and ask for a clear breakdown of any service charges before proceeding.",
+      "sort_order": 9,
+      "is_published": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000010",
+      "question": "Can you support me before I travel?",
+      "answer": "Our pre-departure guidance can help you organise your next steps, prepare a travel checklist and think through arrival arrangements. Discuss the support you need with our team before making bookings.",
+      "sort_order": 10,
+      "is_published": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000011",
+      "question": "How can I track or update my application?",
+      "answer": "Keep copies of your submitted documents and correspondence. Contact our team with your name and application details when you need an update or when your circumstances change.",
+      "sort_order": 11,
+      "is_published": true
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000012",
+      "question": "How do I contact Reign Study Hub?",
+      "answer": "Use our Contact page, book an appointment or reach us through the WhatsApp button on this website. Include your preferred course, study destination and intended intake to help us understand your enquiry.",
+      "sort_order": 12,
+      "is_published": true
+    }
+  ],
+  "posts": [
+    {
+      "id": "20000000-0000-4000-8000-000000000001",
+      "slug": "planning-your-study-abroad-journey",
+      "title": "Planning your study-abroad journey: where to begin",
+      "excerpt": "Turn a big ambition into practical steps, from defining your goals to building an application timeline.",
+      "content": "Begin with your purpose\nBefore choosing a destination, write down what you want to learn and how you hope to use that knowledge. Think about the subjects you enjoy, the kind of learning environment you prefer and the career direction you want to explore.\n\nBuild a focused shortlist\nCompare course content, entry requirements, location and total costs. Keep notes on why each programme fits your goals, rather than choosing from a university name alone. A shortlist makes it easier to give each application the attention it needs.\n\nCreate your document folder\nGather your academic records, passport and CV. Check whether your shortlisted programmes request references, a statement or other supporting materials. Keep clear digital copies and use consistent names across your documents.\n\nWork backwards from your intake\nList each application deadline and leave time for references, tests and document preparation. Review your progress regularly and avoid waiting until the deadline to submit.\n\nTake the next step\nBook a consultation with Reign Study Hub to discuss your academic background, interests and preferred intake. A clear starting point helps you turn your plans into an organised application journey.",
+      "cover_image_url": "/assets/services/admission.webp",
+      "is_published": true,
+      "published_at": null
+    },
+    {
+      "id": "20000000-0000-4000-8000-000000000002",
+      "slug": "building-a-realistic-study-abroad-budget",
+      "title": "Building a realistic study-abroad budget",
+      "excerpt": "Look beyond tuition and create a practical plan for the costs of studying and settling into a new country.",
+      "content": "Look at the whole picture\nA useful study budget covers more than tuition. Create separate categories for accommodation, everyday living, transport, travel, insurance and application-related expenses. Record the currency beside each amount.\n\nCompare like for like\nWhen comparing programmes, check what each quoted fee includes. Consider the length of the course and the likely cost of living in the location. Use a worksheet to record estimates, their sources and when you checked them.\n\nKeep scholarships in perspective\nTreat scholarship research as a separate task with its own eligibility checks and deadlines. Prepare a funding plan that remains workable if an award is not offered. Never assume an application means funding has been secured.\n\nAllow for the unexpected\nBuild a contingency into your plan for changes in costs and unplanned expenses. Discuss funding responsibilities with anyone supporting you, and decide how payments and day-to-day spending will be managed.\n\nAsk clear questions\nRequest a breakdown of costs before committing to any service or payment. Reign Study Hub can help you organise the questions to ask as you compare your study options.",
+      "cover_image_url": "/assets/services/scholarship.webp",
+      "is_published": true,
+      "published_at": null
+    },
+    {
+      "id": "20000000-0000-4000-8000-000000000003",
+      "slug": "pre-departure-checklist-for-students",
+      "title": "Your pre-departure checklist for a confident start",
+      "excerpt": "Organise your documents, arrival plans and everyday essentials before you begin your next chapter.",
+      "content": "Keep key documents together\nOrganise your passport, admission correspondence and other documents requested for your journey. Store secure digital copies separately and keep essential contact details accessible when travelling.\n\nPlan your arrival\nConfirm your accommodation arrangements, check-in instructions and route from the airport. Save the address and contact number somewhere you can access without an internet connection. Share your itinerary with someone you trust.\n\nPrepare for everyday life\nThink through how you will access funds, contact family and get around when you arrive. Make a packing list based on your accommodation, the climate and your airline baggage allowance, leaving space for essential items in your hand luggage.\n\nGet ready to settle in\nRead the welcome information supplied by your institution and note any orientation or registration tasks. Give yourself time to learn your surroundings, establish a routine and meet other students.\n\nCheck before you book\nConfirm your own travel and entry requirements through the appropriate official channels before making commitments. Contact Reign Study Hub to discuss pre-departure support and organise your remaining questions.",
+      "cover_image_url": "/assets/services/departure.webp",
+      "is_published": true,
+      "published_at": null
+    }
+  ]
+}

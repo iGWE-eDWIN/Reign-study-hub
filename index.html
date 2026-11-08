@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>REIGN STUDY HUB LTD | Your Global Education Partner</title>
+<meta name="description" content="REIGN STUDY HUB LTD – International education consultancy. University admissions, scholarships, study visas and student support. A subsidiary of PIS INT'L SYNERGY LTD." />
+<link rel="icon" type="image/png" href="assets/logo-icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --navy: #0a2540;
+  --navy-dark: #061828;
+  --blue: #0c4a8a;
+  --gold: #c9a227;
+  --gold-light: #e8c547;
+  --soft: #f5f7fb;
+  --text: #1e293b;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --white: #ffffff;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'Open Sans',system-ui,sans-serif; color:var(--text); line-height:1.65; background:var(--white); font-size:15.5px; }
+h1,h2,h3,h4 { font-family:'Montserrat',sans-serif; font-weight:700; line-height:1.25; color:var(--navy); }
+a { text-decoration:none; color:inherit; }
+img { max-width:100%; display:block; }
+.container { max-width:1160px; margin:0 auto; padding:0 22px; }
+
+/* TOP BAR */
+.topbar { background:var(--navy-dark); color:rgba(255,255,255,.9); font-size:.78rem; padding:9px 0; }
+.topbar .container { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
+.topbar a { color:rgba(255,255,255,.9); }
+.topbar a:hover { color:var(--gold-light); }
+.topbar .sep { opacity:.4; margin:0 8px; }
+
+/* HEADER */
+header { background:var(--white); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:1000; box-shadow:0 1px 12px rgba(10,37,64,.06); }
+.header-inner { display:flex; align-items:center; justify-content:space-between; padding:12px 0; gap:20px; }
+.brand img { height:54px; width:auto; }
+nav ul { display:flex; list-style:none; gap:18px; align-items:center; }
+nav a { font-size:.84rem; font-weight:600; color:var(--text); font-family:'Montserrat',sans-serif; transition:color .2s; }
+nav a:hover { color:var(--blue); }
+.btn { display:inline-flex; align-items:center; justify-content:center; padding:11px 24px; border-radius:6px; font-weight:700; font-size:.86rem; border:none; cursor:pointer; transition:all .2s; font-family:'Montserrat',sans-serif; }
+.btn-gold { background:var(--gold); color:var(--navy-dark); }
+.btn-gold:hover { background:var(--gold-light); transform:translateY(-1px); }
+.btn-navy { background:var(--navy); color:#fff; }
+.btn-navy:hover { background:var(--navy-dark); }
+.btn-outline { background:transparent; border:2px solid #fff; color:#fff; }
+.btn-outline:hover { background:#fff; color:var(--navy); }
+.mobile-btn { display:none; background:none; border:none; font-size:1.5rem; color:var(--navy); cursor:pointer; }
+
+/* HERO – photographic style */
+.hero {
+  background: linear-gradient(105deg, rgba(6,24,40,.93) 0%, rgba(12,74,138,.78) 45%, rgba(10,37,64,.5) 100%),
+              url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1800&q=85') center/cover no-repeat;
+  color:#fff; padding:90px 0 80px; position:relative; overflow:hidden;
+}
+.hero-grid { display:grid; grid-template-columns:1.15fr .85fr; gap:40px; align-items:center; }
+.hero-label { font-size:.72rem; font-weight:700; letter-spacing:1.8px; text-transform:uppercase; color:var(--gold-light); margin-bottom:14px; font-family:'Montserrat',sans-serif; }
+.hero h1 { font-size:clamp(2rem,4.8vw,2.9rem); color:#fff; margin-bottom:16px; font-weight:800; }
+.hero p { font-size:1.05rem; opacity:.93; margin-bottom:26px; max-width:480px; line-height:1.7; }
+.hero-btns { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:28px; }
+.hero-tags { display:flex; flex-wrap:wrap; gap:10px; }
+.hero-tags span { background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.22); padding:7px 14px; border-radius:30px; font-size:.8rem; font-weight:600; }
+.hero-visual { position:relative; }
+.hero-visual img { border-radius:16px; box-shadow:0 24px 60px rgba(0,0,0,.35); width:100%; max-height:380px; object-fit:cover; }
+
+/* SECTIONS */
+section { padding:70px 0; }
+.sec-head { max-width:540px; margin-bottom:38px; }
+.sec-head.center { text-align:center; margin-left:auto; margin-right:auto; }
+.sec-label { font-size:.7rem; font-weight:700; letter-spacing:1.6px; text-transform:uppercase; color:var(--gold); margin-bottom:8px; font-family:'Montserrat',sans-serif; }
+.sec-head h2 { font-size:clamp(1.5rem,3.2vw,1.95rem); margin-bottom:10px; }
+.sec-head p { color:var(--muted); font-size:.97rem; }
+
+/* DESTINATION PHOTO CARDS */
+.dest-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.dest-card { background:#fff; border-radius:12px; overflow:hidden; border:1px solid var(--border); transition:all .3s; cursor:pointer; }
+.dest-card:hover { transform:translateY(-5px); box-shadow:0 14px 36px rgba(10,37,64,.12); }
+.dest-photo { height:150px; background-size:cover; background-position:center; position:relative; }
+.dest-photo::after { content:''; position:absolute; inset:0; background:linear-gradient(transparent 40%, rgba(6,24,40,.65)); }
+.dest-body { padding:12px 14px 16px; text-align:center; }
+.dest-body .flag { font-size:1.3rem; margin-bottom:4px; }
+.dest-body h3 { font-size:.9rem; margin-bottom:2px; }
+.dest-body p { font-size:.75rem; color:var(--muted); }
+
+/* SERVICES */
+.svc-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+.svc-card { background:#fff; border:1px solid var(--border); border-radius:12px; padding:26px 16px; text-align:center; transition:all .25s; }
+.svc-card:hover { border-color:var(--gold); box-shadow:0 10px 28px rgba(10,37,64,.08); transform:translateY(-3px); }
+.svc-icon { width:52px; height:52px; background:var(--soft); border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:1.4rem; margin:0 auto 12px; }
+.svc-card h3 { font-size:.9rem; margin-bottom:6px; }
+.svc-card p { font-size:.8rem; color:var(--muted); line-height:1.5; }
+
+/* ABOUT */
+.about-wrap { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:start; }
+.about-text p { color:var(--muted); margin-bottom:14px; }
+.vm-cards { display:grid; gap:12px; }
+.vm-card { background:var(--soft); border-radius:10px; padding:18px 20px; display:flex; gap:14px; align-items:flex-start; }
+.vm-card .ic { width:40px; height:40px; background:#fff; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex-shrink:0; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+.vm-card h4 { font-size:.9rem; margin-bottom:4px; }
+.vm-card p { font-size:.82rem; color:var(--muted); margin:0; }
+
+/* FOUNDER */
+.founder-banner { background:var(--navy); border-radius:14px; padding:32px; display:flex; gap:28px; align-items:center; color:#fff; margin-top:40px; }
+.founder-banner img { width:120px; height:120px; border-radius:50%; object-fit:cover; border:3px solid var(--gold); flex-shrink:0; }
+.founder-banner h3 { color:#fff; font-size:1.1rem; margin-bottom:8px; }
+.founder-banner p { font-size:.9rem; opacity:.9; margin-bottom:10px; line-height:1.6; }
+.founder-banner .name { font-family:'Montserrat',sans-serif; font-weight:700; color:var(--gold-light); }
+
+/* REQUIREMENTS */
+.req-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; justify-content:center; }
+.req-tab { padding:10px 18px; border:1.5px solid var(--border); background:#fff; border-radius:6px; font-size:.84rem; font-weight:600; cursor:pointer; font-family:'Montserrat',sans-serif; transition:all .2s; }
+.req-tab.active, .req-tab:hover { background:var(--navy); color:#fff; border-color:var(--navy); }
+.req-panel { display:none; background:#fff; border:1px solid var(--border); border-radius:12px; padding:28px; }
+.req-panel.active { display:block; animation:fadeIn .3s ease; }
+@keyframes fadeIn { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+.req-panel h3 { font-size:1.15rem; margin-bottom:6px; }
+.req-panel .sub { font-size:.88rem; color:var(--muted); margin-bottom:16px; }
+.req-panel ul { list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:6px 28px; }
+.req-panel li { font-size:.88rem; display:flex; gap:8px; padding:5px 0; }
+.req-panel li::before { content:'✓'; color:var(--gold); font-weight:700; }
+.req-note { margin-top:16px; font-size:.82rem; color:var(--muted); background:var(--soft); padding:12px 14px; border-left:3px solid var(--gold); border-radius:0 6px 6px 0; }
+
+/* PROCESS */
+.proc-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.proc-card { background:#fff; border:1px solid var(--border); border-radius:12px; padding:22px 18px; transition:all .2s; }
+.proc-card:hover { border-color:var(--gold); }
+.proc-num { width:36px; height:36px; background:var(--soft); color:var(--gold); font-family:'Montserrat',sans-serif; font-weight:800; font-size:.9rem; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:10px; }
+.proc-card h3 { font-size:.92rem; margin-bottom:5px; }
+.proc-card p { font-size:.82rem; color:var(--muted); }
+
+/* FORM – multi step look */
+.apply-bg { background:var(--soft); }
+.form-box { background:#fff; border:1px solid var(--border); border-radius:14px; max-width:900px; margin:0 auto; padding:36px 36px; box-shadow:0 6px 28px rgba(10,37,64,.05); }
+.form-box h2 { font-size:1.3rem; margin-bottom:4px; }
+.form-intro { color:var(--muted); font-size:.9rem; margin-bottom:22px; padding-bottom:16px; border-bottom:1px solid var(--border); }
+.steps { display:flex; gap:6px; margin-bottom:28px; flex-wrap:wrap; }
+.step { flex:1; min-width:90px; text-align:center; padding:11px 6px; background:var(--soft); border-radius:8px; font-size:.72rem; font-weight:700; color:var(--muted); font-family:'Montserrat',sans-serif; }
+.step.active { background:var(--navy); color:#fff; }
+.form-sec { margin-bottom:26px; }
+.form-sec-title { font-family:'Montserrat',sans-serif; font-size:.74rem; font-weight:700; letter-spacing:.9px; text-transform:uppercase; color:var(--navy); margin-bottom:12px; display:flex; align-items:center; gap:8px; }
+.form-sec-title span { background:var(--navy); color:#fff; width:22px; height:22px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:.7rem; }
+.frow { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:12px; }
+.frow3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:12px; }
+.fg { margin-bottom:12px; }
+.fg label { display:block; font-size:.83rem; font-weight:600; margin-bottom:5px; }
+.fg label .r { color:#c53030; }
+.fg input, .fg select, .fg textarea { width:100%; padding:11px 13px; border:1.5px solid var(--border); border-radius:6px; font-size:.9rem; font-family:inherit; background:#fff; color:var(--text); }
+.fg input:focus, .fg select:focus, .fg textarea:focus { outline:none; border-color:var(--blue); box-shadow:0 0 0 3px rgba(12,74,138,.1); }
+.fg textarea { min-height:80px; resize:vertical; }
+.radios { display:flex; flex-wrap:wrap; gap:14px; margin-top:5px; }
+.radios label { display:flex; align-items:center; gap:6px; font-size:.86rem; font-weight:500; cursor:pointer; }
+.note { font-size:.8rem; color:var(--muted); background:var(--soft); padding:12px 14px; border-left:3px solid var(--gold); margin-top:8px; border-radius:0 6px 6px 0; }
+.dep-box { display:none; margin-top:12px; padding:16px; background:var(--soft); border-radius:8px; }
+.dep-box.show { display:block; }
+.check-row { display:flex; flex-direction:column; gap:10px; margin:16px 0; }
+.check-row label { display:flex; align-items:flex-start; gap:8px; font-size:.86rem; cursor:pointer; }
+.form-actions .btn { width:100%; padding:14px; font-size:.94rem; }
+
+/* CONTACT */
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:36px; }
+.office { margin-bottom:20px; }
+.office h4 { font-size:.9rem; margin-bottom:6px; }
+.office p { font-size:.86rem; color:var(--muted); line-height:1.55; }
+.c-panel { background:var(--navy); color:#fff; border-radius:14px; padding:32px 28px; }
+.c-panel h3 { color:#fff; font-size:1.15rem; margin-bottom:8px; }
+.c-panel p { opacity:.9; font-size:.9rem; margin-bottom:12px; }
+.c-panel .btn { background:var(--gold); color:var(--navy-dark); margin-top:10px; }
+
+/* FOOTER */
+footer { background:var(--navy-dark); color:rgba(255,255,255,.75); padding:50px 0 22px; }
+.ft-grid { display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:28px; margin-bottom:32px; }
+.ft-brand img { height:46px; width:auto; margin-bottom:12px; filter:brightness(0) invert(1); opacity:.92; }
+.ft-brand p { font-size:.85rem; line-height:1.55; margin-bottom:6px; }
+.ft-brand .sub { font-size:.73rem; opacity:.5; }
+.ft-col h4 { color:#fff; font-size:.78rem; font-weight:700; letter-spacing:.7px; text-transform:uppercase; margin-bottom:12px; }
+.ft-col ul { list-style:none; }
+.ft-col li { margin-bottom:6px; font-size:.85rem; }
+.ft-col a:hover { color:var(--gold-light); }
+.ft-bottom { border-top:1px solid rgba(255,255,255,.1); padding-top:16px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:.76rem; }
+
+/* FLOAT */
+.wa-float { position:fixed; bottom:24px; right:24px; width:56px; height:56px; background:#25d366; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.6rem; box-shadow:0 4px 16px rgba(0,0,0,.22); z-index:999; transition:transform .2s; }
+.wa-float:hover { transform:scale(1.08); }
+
+/* TOAST */
+.toast { position:fixed; bottom:24px; left:24px; background:var(--navy); color:#fff; padding:16px 22px; max-width:340px; z-index:9999; display:none; box-shadow:0 10px 36px rgba(0,0,0,.28); font-size:.88rem; border-radius:8px; border-left:4px solid var(--gold); }
+.toast.show { display:block; animation:up .3s ease; }
+@keyframes up { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+
+/* CTA BANNER */
+.cta-banner { background:var(--navy); color:#fff; padding:48px 0; text-align:center; }
+.cta-banner h2 { color:#fff; font-size:1.5rem; margin-bottom:10px; }
+.cta-banner p { opacity:.9; margin-bottom:20px; }
+
+/* RESPONSIVE */
+@media (max-width:980px) {
+  .hero-grid, .about-wrap, .contact-grid, .ft-grid { grid-template-columns:1fr; }
+  .dest-grid { grid-template-columns:repeat(2,1fr); }
+  .svc-grid { grid-template-columns:1fr 1fr; }
+  .proc-grid { grid-template-columns:1fr 1fr; }
+  .frow, .frow3 { grid-template-columns:1fr; }
+  .req-panel ul { grid-template-columns:1fr; }
+  nav ul { display:none; }
+  .mobile-btn { display:block; }
+  nav.open ul { display:flex; flex-direction:column; position:absolute; top:100%; left:0; right:0; background:#fff; border-bottom:1px solid var(--border); padding:14px 22px; gap:10px; box-shadow:0 8px 18px rgba(0,0,0,.06); }
+  .brand img { height:46px; }
+  .hero-visual { display:none; }
+  .founder-banner { flex-direction:column; text-align:center; }
+}
+@media (max-width:600px) {
+  .dest-grid, .svc-grid, .proc-grid { grid-template-columns:1fr; }
+  .form-box { padding:24px 16px; }
+  .hero { padding:56px 0 52px; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container">
+    <span>Your Global Education Partner · A subsidiary of PIS INT'L SYNERGY LTD</span>
+    <span>
+      <a href="tel:+2348034239813">+234 803 423 9813</a><span class="sep">|</span>
+      <a href="tel:+447480251588">+44 7480 251588</a><span class="sep">|</span>
+      <a href="mailto:reignstudyabroad@gmail.com">reignstudyabroad@gmail.com</a>
+    </span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container header-inner">
+    <a href="#home" class="brand"><img src="assets/logo-header.png" alt="REIGN STUDY HUB LTD" /></a>
+    <nav id="nav">
+      <button class="mobile-btn" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menu">☰</button>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#apply">Student Portal</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#apply" class="btn btn-gold" style="padding:9px 16px;font-size:.8rem;">Apply Now</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-label">Your Global Education Partner</div>
+        <h1>Your Global Education Partner</h1>
+        <p>We help you achieve your dream of studying abroad with expert guidance, trusted support and a clear path to your future.</p>
+        <div class="hero-btns">
+          <a href="#apply" class="btn btn-gold">Apply Now</a>
+          <a href="#destinations" class="btn btn-outline">Explore Destinations</a>
+        </div>
+        <div class="hero-tags">
+          <span>Top Universities</span>
+          <span>Scholarship Guidance</span>
+          <span>Visa Support</span>
+          <span>Personalised Consultation</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=85" alt="Student ready for international education" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR DESTINATIONS -->
+<section id="destinations">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="sec-label">Study Destinations</div>
+      <h2>Popular Study Destinations</h2>
+      <p>Explore world-class education in our priority destinations and beyond.</p>
+    </div>
+    <div class="dest-grid">
+      <div class="dest-card" onclick="showReq('canada'); document.getElementById('requirements').scrollIntoView({behavior:'smooth'})">
+        <div class="dest-photo" style="background-image:url('https://images.unsplash.com/photo-1517935706615-2717063c694e?w=700&q=85')"></div>
+        <div class="dest-body"><div class="flag">🇨🇦</div><h3>Canada</h3><p>Study in Canada</p></div>
+      </div>
+      <div class="dest-card" onclick="showReq('uk'); document.getElementById('requirements').scrollIntoView({behavior:'smooth'})">
+        <div class="dest-photo" style="background-image:url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=700&q=85')"></div>
+        <div class="dest-body"><div class="flag">🇬🇧</div><h3>United Kingdom</h3><p>Study in the UK</p></div>
+      </div>
+      <div class="dest-card" onclick="showReq('spain'); document.getElementById('requirements').scrollIntoView({behavior:'smooth'})">
+        <div class="dest-photo" style="background-image:url('https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=700&q=85')"></div>
+        <div class="dest-body"><div class="flag">🇪🇸</div><h3>Spain</h3><p>Study in Spain</p></div>
+      </div>
+      <div class="dest-card" onclick="showReq('turkey'); document.getElementById('requirements').scrollIntoView({behavior:'smooth'})">
+        <div class="dest-photo" style="background-image:url('https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=700&q=85')"></div>
+        <div class="dest-body"><div class="flag">🇹🇷</div><h3>Turkey</h3><p>Study in Turkey</p></div>
+      </div>
+      <div class="dest-card" onclick="showReq('poland'); document.getElementById('requirements').scrollIntoView({behavior:'smooth'})">
+        <div class="dest-photo" style="background-image:url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=700&q=85')"></div>
+        <div class="dest-body"><div class="flag">🇵🇱</div><h3>Poland</h3><p>Study in Poland</p></div>
+      </div>
+      <div class="dest-card" onclick="showReq('cyprus'); document.getElementById('requirements').scrollIntoView({behavior:'smooth'})">
+        <div class="dest-photo" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=85')"></div>
+        <div class="dest-body"><div class="flag">🇨🇾</div><h3>Cyprus</h3><p>Study in Cyprus</p></div>
+      </div>
+      <div class="dest-card" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">
+        <div class="dest-photo" style="background-image:url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=700&q=85')"></div>
+        <div class="dest-body"><div class="flag">🇩🇪</div><h3>Germany</h3><p>Study in Germany</p></div>
+      </div>
+      <div class="dest-card" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">
+        <div class="dest-photo" style="background-image:url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=700&q=85')"></div>
+        <div class="dest-body"><div class="flag">🇫🇷</div><h3>France</h3><p>Study in France</p></div>
+      </div>
+      <div class="dest-card" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">
+        <div class="dest-photo" style="background-image:url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=700&q=85')"></div>
+        <div class="dest-body"><div class="flag">🇮🇹</div><h3>Italy</h3><p>Study in Italy</p></div>
+      </div>
+      <div class="dest-card" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">
+        <div class="dest-photo" style="background-image:url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=700&q=85')"></div>
+        <div class="dest-body"><div class="flag">🇺🇸</div><h3>USA</h3><p>Study in USA</p></div>
+      </div>
+      <div class="dest-card" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">
+        <div class="dest-photo" style="background-image:url('https://images.unsplash.com/photo-1517154421773-05222d4e8780?w=700&q=85')"></div>
+        <div class="dest-body"><div class="flag">🇰🇷</div><h3>South Korea</h3><p>Study in South Korea</p></div>
+      </div>
+      <div class="dest-card" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">
+        <div class="dest-photo" style="background:linear-gradient(135deg,#0a2540,#0c4a8a);display:flex;align-items:center;justify-content:center;">
+          <span style="font-size:2rem;color:#fff;font-weight:700;">+</span>
+        </div>
+        <div class="dest-body"><div class="flag">🌍</div><h3>And More</h3><p>Other destinations</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section style="background:var(--soft);" id="services">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="sec-label">What We Offer</div>
+      <h2>Our Services</h2>
+      <p>Comprehensive support for your study abroad journey.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card"><div class="svc-icon">🎓</div><h3>University & Course Selection</h3><p>Find the right university and programme for you.</p></div>
+      <div class="svc-card"><div class="svc-icon">📝</div><h3>Admission Assistance</h3><p>Step-by-step support with your application.</p></div>
+      <div class="svc-card"><div class="svc-icon">🏆</div><h3>Scholarship Guidance</h3><p>Explore funding opportunities.</p></div>
+      <div class="svc-card"><div class="svc-icon">🛂</div><h3>Study Visa Guidance</h3><p>Understand requirements and get prepared.</p></div>
+      <div class="svc-card"><div class="svc-icon">✈️</div><h3>Pre-Departure Support</h3><p>Be ready for your journey abroad.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT + FOUNDER -->
+<section id="about">
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-text">
+        <div class="sec-label">About Us</div>
+        <h2>Empowering Your Global Education Journey</h2>
+        <p>REIGN STUDY HUB LTD is an international education consultancy dedicated to helping students access quality educational opportunities in reputable institutions around the world. As a subsidiary of PIS INT'L SYNERGY LTD, we guide prospective students through the study-abroad process — from choosing suitable universities and programmes to preparing admission applications and understanding student visa requirements.</p>
+        <p>We understand that pursuing an education abroad is a significant investment in your future. Our goal is to make the process more organised, accessible and understandable by providing guidance tailored to your academic background, career interests, destination preferences and financial circumstances.</p>
+        <a href="#services" class="btn btn-navy" style="margin-top:8px;">Our Services</a>
+      </div>
+      <div class="vm-cards">
+        <div class="vm-card"><div class="ic">🎯</div><div><h4>Our Vision</h4><p>To become a trusted international education consultancy connecting students with global learning opportunities and successful futures.</p></div></div>
+        <div class="vm-card"><div class="ic">📋</div><div><h4>Our Mission</h4><p>Accessible, reliable and student-focused guidance for university admissions, scholarships and study visa preparation.</p></div></div>
+        <div class="vm-card"><div class="ic">⭐</div><div><h4>Our Values</h4><p>Professionalism · Integrity · Student Support · Excellence · Accessibility · Accountability</p></div></div>
+      </div>
+    </div>
+    <div class="founder-banner">
+      <img src="assets/founder.jpg" alt="Osepribo T.S. Jackrich" />
+      <div>
+        <h3>Message from the Founder</h3>
+        <p>Welcome to REIGN STUDY HUB LTD! We are delighted to have you here. Please explore our website for detailed information on our educational offerings. Our team is available to assist and provide guidance. Thank you for choosing us — we look forward to a partnership filled with success and memorable experiences.</p>
+        <div class="name">Osepribo T.S. Jackrich</div>
+        <div style="font-size:.8rem;opacity:.7;margin-top:2px;">Founder / CEO · REIGN STUDY HUB LTD</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REQUIREMENTS -->
+<section style="background:var(--soft);" id="requirements">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="sec-label">Through Our System</div>
+      <h2>Country Application Requirements</h2>
+      <p>Document categories handled through the REIGN STUDY HUB LTD application system.</p>
+    </div>
+    <div class="req-tabs">
+      <button class="req-tab active" onclick="showReq('canada')">Canada</button>
+      <button class="req-tab" onclick="showReq('uk')">United Kingdom</button>
+      <button class="req-tab" onclick="showReq('spain')">Spain</button>
+      <button class="req-tab" onclick="showReq('turkey')">Turkey</button>
+      <button class="req-tab" onclick="showReq('poland')">Poland</button>
+      <button class="req-tab" onclick="showReq('cyprus')">Cyprus / North Cyprus</button>
+    </div>
+    <div id="req-canada" class="req-panel active">
+      <h3>🇨🇦 Canada — Student Requirements Handled Through Our System</h3>
+      <p class="sub">General document categories for study applications</p>
+      <ul>
+        <li>International passport biodata page</li>
+        <li>Passport photograph, where requested</li>
+        <li>Secondary school certificates and results</li>
+        <li>University certificates and transcripts</li>
+        <li>Curriculum vitae, where requested</li>
+        <li>Statement of purpose or study plan</li>
+        <li>English-language proficiency evidence</li>
+        <li>Admission letter and enrolment information</li>
+        <li>Financial support information</li>
+        <li>Accommodation information, where applicable</li>
+        <li>Additional institution-specific documents</li>
+      </ul>
+      <div class="req-note">General guidance only. Exact requirements may change and must be confirmed for each application. We do not display government portal links.</div>
+    </div>
+    <div id="req-uk" class="req-panel">
+      <h3>🇬🇧 United Kingdom — Student Requirements Handled Through Our System</h3>
+      <p class="sub">General document categories for study applications</p>
+      <ul>
+        <li>International passport biodata page</li>
+        <li>Academic certificates and transcripts</li>
+        <li>University admission information</li>
+        <li>Course and programme details</li>
+        <li>English-language proficiency evidence</li>
+        <li>Financial support information</li>
+        <li>Accommodation information, where applicable</li>
+        <li>Academic or professional references</li>
+        <li>Additional programme-specific documents</li>
+      </ul>
+      <div class="req-note">General guidance only. Exact requirements may change and must be confirmed for each application. We do not display government portal links.</div>
+    </div>
+    <div id="req-spain" class="req-panel">
+      <h3>🇪🇸 Spain — Student Requirements Handled Through Our System</h3>
+      <p class="sub">General document categories for study applications</p>
+      <ul>
+        <li>International passport biodata page</li>
+        <li>Academic certificates and transcripts</li>
+        <li>Admission or enrolment information</li>
+        <li>Language proficiency evidence, where required</li>
+        <li>Financial support information</li>
+        <li>Accommodation information</li>
+        <li>Health insurance information, where applicable</li>
+        <li>Certified translations or document authentication</li>
+        <li>Additional institution-specific documents</li>
+      </ul>
+      <div class="req-note">General guidance only. Exact requirements may change and must be confirmed for each application. We do not display government portal links.</div>
+    </div>
+    <div id="req-turkey" class="req-panel">
+      <h3>🇹🇷 Turkey — Student Requirements Handled Through Our System</h3>
+      <p class="sub">General document categories for study applications</p>
+      <ul>
+        <li>International passport biodata page</li>
+        <li>Passport photograph</li>
+        <li>Secondary school certificates and results</li>
+        <li>University certificates and transcripts</li>
+        <li>Preferred university and programme details</li>
+        <li>Language proficiency evidence, where required</li>
+        <li>Motivation letter, where requested</li>
+        <li>Financial support information, where applicable</li>
+        <li>Additional university-specific documents</li>
+      </ul>
+      <div class="req-note">General guidance only. Exact requirements may change and must be confirmed for each application. We do not display government portal links.</div>
+    </div>
+    <div id="req-poland" class="req-panel">
+      <h3>🇵🇱 Poland — Student Requirements Handled Through Our System</h3>
+      <p class="sub">General document categories for study applications</p>
+      <ul>
+        <li>International passport biodata page</li>
+        <li>Academic certificates and transcripts</li>
+        <li>University admission information</li>
+        <li>Language proficiency evidence, where required</li>
+        <li>Curriculum vitae, where requested</li>
+        <li>Motivation letter, where required</li>
+        <li>Financial support information</li>
+        <li>Accommodation information</li>
+        <li>Insurance information, where applicable</li>
+        <li>Additional institution-specific documents</li>
+      </ul>
+      <div class="req-note">General guidance only. Exact requirements may change and must be confirmed for each application. We do not display government portal links.</div>
+    </div>
+    <div id="req-cyprus" class="req-panel">
+      <h3>🇨🇾 Cyprus & North Cyprus — Student Requirements Handled Through Our System</h3>
+      <p class="sub">General document categories for study applications</p>
+      <ul>
+        <li>International passport biodata page</li>
+        <li>Passport photograph</li>
+        <li>Secondary school certificates and results</li>
+        <li>University degree certificates and transcripts</li>
+        <li>Admission and enrolment information</li>
+        <li>Language proficiency evidence, where required</li>
+        <li>Financial support information</li>
+        <li>Accommodation information</li>
+        <li>Additional university-specific forms and documents</li>
+      </ul>
+      <div class="req-note">General guidance only. Exact requirements may change and must be confirmed for each application. We do not display government portal links.</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="sec-label">How It Works</div>
+      <h2>Our Admission Application Process</h2>
+    </div>
+    <div class="proc-grid">
+      <div class="proc-card"><div class="proc-num">1</div><h3>Initial Consultation</h3><p>Share your academic background, destination, course, level and budget.</p></div>
+      <div class="proc-card"><div class="proc-num">2</div><h3>Eligibility Assessment</h3><p>Qualifications reviewed against published university requirements.</p></div>
+      <div class="proc-card"><div class="proc-num">3</div><h3>University & Programme Selection</h3><p>Suitable options identified based on your profile.</p></div>
+      <div class="proc-card"><div class="proc-num">4</div><h3>Document Preparation</h3><p>Guidance on documents required for your programme.</p></div>
+      <div class="proc-card"><div class="proc-num">5</div><h3>Application Submission</h3><p>Application prepared and submitted with your authorisation.</p></div>
+      <div class="proc-card"><div class="proc-num">6</div><h3>Follow-up & Admission Offer</h3><p>Progress updates and guidance on understanding the offer.</p></div>
+      <div class="proc-card"><div class="proc-num">7</div><h3>Study Visa Preparation</h3><p>Document requirements for your chosen destination.</p></div>
+      <div class="proc-card"><div class="proc-num">8</div><h3>Pre-Departure Support</h3><p>Enrolment, accommodation, travel and arrival preparation.</p></div>
+      <div class="proc-card"><div class="proc-num">9</div><h3>Ongoing Guidance</h3><p>Continued support as you settle into your studies.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner">
+  <div class="container">
+    <h2>Ready to Start Your Journey?</h2>
+    <p>Get expert guidance and begin your application today.</p>
+    <a href="#apply" class="btn btn-gold">Apply Now</a>
+  </div>
+</div>
+
+<!-- APPLICATION FORM -->
+<section class="apply-bg" id="apply">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="sec-label">Student Portal</div>
+      <h2>Student Application Form</h2>
+      <p>Complete the form to begin. Our team will review and contact you.</p>
+    </div>
+    <div class="form-box">
+      <h2>REIGN STUDY HUB LTD – International Student Application</h2>
+      <p class="form-intro">Fields marked * are required.</p>
+      <div class="steps">
+        <div class="step active">1. Personal & Contact</div>
+        <div class="step">2. Study Details</div>
+        <div class="step">3. Academic</div>
+        <div class="step">4. Passport</div>
+        <div class="step">5. Dependants</div>
+        <div class="step">6. Submit</div>
+      </div>
+      <form id="appForm" onsubmit="return handleSubmit(event)">
+        <!-- Personal & Contact -->
+        <div class="form-sec">
+          <div class="form-sec-title"><span>1</span> Personal & Contact Details</div>
+          <div class="frow">
+            <div class="fg"><label>Surname <span class="r">*</span></label><input type="text" name="surname" required /></div>
+            <div class="fg"><label>First Name <span class="r">*</span></label><input type="text" name="firstName" required /></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Other Name(s)</label><input type="text" name="otherNames" /></div>
+            <div class="fg"><label>Gender <span class="r">*</span></label>
+              <select name="gender" required><option value="">Select</option><option>Male</option><option>Female</option><option>Prefer not to say</option></select>
+            </div>
+          </div>
+          <div class="frow3">
+            <div class="fg"><label>Date of Birth <span class="r">*</span></label><input type="date" name="dob" required /></div>
+            <div class="fg"><label>Age <span class="r">*</span></label><input type="number" name="age" min="15" max="80" required /></div>
+            <div class="fg"><label>Marital Status <span class="r">*</span></label>
+              <select name="marital" required><option value="">Select</option><option>Single</option><option>Married</option><option>Divorced</option><option>Widowed</option></select>
+            </div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Nationality <span class="r">*</span></label><input type="text" name="nationality" value="Nigerian" required /></div>
+            <div class="fg"><label>Country of Residence <span class="r">*</span></label><input type="text" name="countryRes" value="Nigeria" required /></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Email Address <span class="r">*</span></label><input type="email" name="email" required /></div>
+            <div class="fg"><label>Primary Telephone <span class="r">*</span></label><input type="tel" name="phone" required placeholder="+234 ..." /></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>WhatsApp Number <span class="r">*</span></label><input type="tel" name="whatsapp" required /></div>
+            <div class="fg"><label>Alternative Telephone</label><input type="tel" name="altPhone" /></div>
+          </div>
+        </div>
+        <!-- Study -->
+        <div class="form-sec">
+          <div class="form-sec-title"><span>2</span> Study Level, Destination & Course</div>
+          <div class="frow">
+            <div class="fg"><label>Preferred Study Level <span class="r">*</span></label>
+              <select name="level" id="level" required onchange="checkDependant()">
+                <option value="">Select level</option>
+                <option>Foundation</option>
+                <option>Certificate</option>
+                <option>Diploma</option>
+                <option>HND</option>
+                <option>Undergraduate / Bachelor's</option>
+                <option>Postgraduate Diploma</option>
+                <option>Master's Degree</option>
+                <option>MBA</option>
+                <option>PhD / Doctoral</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="fg"><label>Preferred Destination <span class="r">*</span></label>
+              <select name="destination" required>
+                <option value="">Select preferred country</option>
+                <optgroup label="Priority Destinations">
+                  <option>Canada</option>
+                  <option>United Kingdom</option>
+                  <option>Spain</option>
+                  <option>Turkey</option>
+                  <option>Poland</option>
+                  <option>Cyprus</option>
+                  <option>North Cyprus</option>
+                </optgroup>
+                <optgroup label="United Kingdom">
+                  <option>England</option>
+                  <option>Scotland</option>
+                  <option>Wales</option>
+                  <option>Northern Ireland</option>
+                </optgroup>
+                <optgroup label="Europe">
+                  <option>Germany</option>
+                  <option>Finland</option>
+                  <option>Italy</option>
+                  <option>Hungary</option>
+                  <option>France</option>
+                  <option>Netherlands</option>
+                  <option>Sweden</option>
+                  <option>Norway</option>
+                  <option>Denmark</option>
+                  <option>Belgium</option>
+                  <option>Austria</option>
+                  <option>Portugal</option>
+                  <option>Ireland</option>
+                  <option>Switzerland</option>
+                  <option>Czech Republic</option>
+                  <option>Romania</option>
+                  <option>Greece</option>
+                  <option>Malta</option>
+                </optgroup>
+                <optgroup label="North America">
+                  <option>United States of America</option>
+                  <option>Mexico</option>
+                </optgroup>
+                <optgroup label="Africa">
+                  <option>South Africa</option>
+                  <option>Ghana</option>
+                  <option>Egypt</option>
+                  <option>Kenya</option>
+                  <option>Mauritius</option>
+                </optgroup>
+                <optgroup label="Asia">
+                  <option>South Korea</option>
+                  <option>China</option>
+                  <option>Japan</option>
+                  <option>Malaysia</option>
+                  <option>Singapore</option>
+                  <option>United Arab Emirates</option>
+                </optgroup>
+                <option>Other / Open to recommendations</option>
+              </select>
+            </div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Preferred Course / Programme</label>
+              <select name="course">
+                <option value="">Select course area</option>
+                <optgroup label="Business, Management & Finance">
+                  <option>Business Administration</option>
+                  <option>Accounting</option>
+                  <option>Finance</option>
+                  <option>Economics</option>
+                  <option>Marketing</option>
+                  <option>International Business</option>
+                  <option>Human Resource Management</option>
+                  <option>Project Management</option>
+                  <option>MBA</option>
+                </optgroup>
+                <optgroup label="Computing, IT & Data">
+                  <option>Computer Science</option>
+                  <option>Information Technology</option>
+                  <option>Software Engineering</option>
+                  <option>Data Science</option>
+                  <option>Artificial Intelligence</option>
+                  <option>Cybersecurity</option>
+                  <option>Cloud Computing</option>
+                  <option>Machine Learning</option>
+                </optgroup>
+                <optgroup label="Engineering">
+                  <option>Civil Engineering</option>
+                  <option>Mechanical Engineering</option>
+                  <option>Electrical Engineering</option>
+                  <option>Petroleum Engineering</option>
+                  <option>Industrial Engineering</option>
+                  <option>Renewable Energy Engineering</option>
+                </optgroup>
+                <optgroup label="Health & Life Sciences">
+                  <option>Medicine</option>
+                  <option>Nursing</option>
+                  <option>Public Health</option>
+                  <option>Pharmacy</option>
+                  <option>Biomedical Science</option>
+                  <option>Biotechnology</option>
+                </optgroup>
+                <optgroup label="Social Sciences, Law & Education">
+                  <option>International Relations</option>
+                  <option>Law</option>
+                  <option>Psychology</option>
+                  <option>Education</option>
+                  <option>Public Policy</option>
+                </optgroup>
+                <optgroup label="Other Fields">
+                  <option>Architecture</option>
+                  <option>Hospitality Management</option>
+                  <option>Tourism Management</option>
+                  <option>Mass Communication</option>
+                  <option>Agriculture</option>
+                  <option>Environmental Science</option>
+                </optgroup>
+                <option>Other Course / Programme</option>
+              </select>
+            </div>
+            <div class="fg"><label>Preferred University (if any)</label><input type="text" name="university" /></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Preferred Intake</label>
+              <select name="intake">
+                <option>January / February</option>
+                <option>March / April</option>
+                <option>May / June</option>
+                <option>September / October</option>
+                <option>November</option>
+                <option>Next Available Intake</option>
+                <option>Flexible</option>
+              </select>
+            </div>
+            <div class="fg"><label>Tuition Fees Budget (per year)</label>
+              <select name="budget">
+                <option>Below US$3,000</option>
+                <option>US$3,000 – US$5,000</option>
+                <option>US$5,001 – US$8,000</option>
+                <option>US$8,001 – US$12,000</option>
+                <option>US$12,001 – US$18,000</option>
+                <option>US$18,001 – US$25,000</option>
+                <option>Above US$25,000</option>
+                <option>Seeking Scholarship / Funding Guidance</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Academic -->
+        <div class="form-sec">
+          <div class="form-sec-title"><span>3</span> Academic Background</div>
+          <div class="frow">
+            <div class="fg"><label>Highest Educational Qualification</label><input type="text" name="qualification" placeholder="e.g. BSc, HND, WAEC" /></div>
+            <div class="fg"><label>Previous Institution</label><input type="text" name="institution" /></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Course Previously Studied</label><input type="text" name="prevCourse" /></div>
+            <div class="fg"><label>Graduation Year / Grade</label><input type="text" name="gradYear" /></div>
+          </div>
+        </div>
+        <!-- Passport -->
+        <div class="form-sec">
+          <div class="form-sec-title"><span>4</span> Passport Information</div>
+          <div class="fg"><label>Do you have an international passport? <span class="r">*</span></label>
+            <div class="radios">
+              <label><input type="radio" name="hasPassport" value="Yes" required /> Yes</label>
+              <label><input type="radio" name="hasPassport" value="No" /> No</label>
+              <label><input type="radio" name="hasPassport" value="Application in Progress" /> Application in Progress</label>
+            </div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Passport Number</label><input type="text" name="passportNo" placeholder="If available" /></div>
+            <div class="fg"><label>Country of Issue</label><input type="text" name="passportCountry" value="Nigeria" /></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Passport Issue Date</label><input type="date" name="passportIssue" /></div>
+            <div class="fg"><label>Passport Expiry Date</label><input type="date" name="passportExpiry" /></div>
+          </div>
+          <div class="fg"><label>If you do not have a passport</label>
+            <select name="passportNeed">
+              <option value="">Select if applicable</option>
+              <option>New Passport Application</option>
+              <option>Passport Renewal</option>
+              <option>Not Yet Decided</option>
+            </select>
+          </div>
+        </div>
+        <!-- Dependants -->
+        <div class="form-sec">
+          <div class="form-sec-title"><span>5</span> Dependant Details <small style="font-weight:500;text-transform:none;letter-spacing:0;color:var(--muted);">(Required for Master's / PhD)</small></div>
+          <div class="fg"><label>Do you intend to apply with dependants?</label>
+            <div class="radios">
+              <label><input type="radio" name="hasDependant" value="Yes" onchange="toggleDep(true)" /> Yes</label>
+              <label><input type="radio" name="hasDependant" value="No" onchange="toggleDep(false)" /> No</label>
+              <label><input type="radio" name="hasDependant" value="Not Sure" onchange="toggleDep(false)" /> Not Sure</label>
+            </div>
+          </div>
+          <div class="dep-box" id="depBox">
+            <div class="frow">
+              <div class="fg"><label>Number of Dependants</label><input type="number" name="depNumber" min="1" max="10" /></div>
+              <div class="fg"><label>Relationship</label>
+                <select name="depRelation">
+                  <option value="">Select</option>
+                  <option>Spouse</option>
+                  <option>Child / Children</option>
+                  <option>Spouse and Children</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg"><label>Dependant Full Name(s) & Details</label><textarea name="depNotes" rows="2" placeholder="Names, dates of birth, nationality..."></textarea></div>
+          </div>
+        </div>
+        <!-- Declaration -->
+        <div class="form-sec">
+          <div class="form-sec-title"><span>6</span> Declaration & Consent</div>
+          <p style="font-size:.87rem;color:var(--muted);margin-bottom:12px;">I declare that the information supplied is accurate and complete. I understand that university admission, scholarships and visa decisions are made by the relevant institutions and authorities. Submission does not guarantee admission, a scholarship or a visa.</p>
+          <div class="check-row">
+            <label><input type="checkbox" name="confirmAccurate" required /> I confirm that the information provided is accurate.</label>
+            <label><input type="checkbox" name="agreePrivacy" required /> I agree to the company's privacy policy.</label>
+            <label><input type="checkbox" name="consentContact" required /> I consent to being contacted regarding my application.</label>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-navy">SUBMIT STUDENT APPLICATION</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-label">Contact Us</div>
+      <h2>Our Offices & Contact Details</h2>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="office">
+          <h4>Head Office – Buguma City</h4>
+          <p>No. 15 Jackreece Compound, King Amachree Road, Buguma City, Asari-Toru LGA, Rivers State, Nigeria.</p>
+        </div>
+        <div class="office">
+          <h4>Port Harcourt Branch</h4>
+          <p>No. 5 Opili Plaza, By Guinness Warehouse, Azuabie Town, Okujagu, Trans Amadi, Port Harcourt, Rivers State.<br>Office: +234 802 562 4934</p>
+        </div>
+        <div class="office">
+          <h4>Lagos Branch</h4>
+          <p>98 Fagbemi Street, Ayanre-Ibiye, Along Agbara-Badagry Road, Lagos State.<br>Tel: +234 803 423 9813</p>
+        </div>
+        <div class="office">
+          <h4>General</h4>
+          <p>Nigeria: <a href="tel:+2348034239813">+234 803 423 9813</a><br>
+          UK: <a href="tel:+447480251588">+44 7480 251588</a><br>
+          Email: <a href="mailto:reignstudyabroad@gmail.com">reignstudyabroad@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="c-panel">
+        <h3>REIGN STUDY HUB LTD</h3>
+        <p>A subsidiary of PIS INT'L SYNERGY LTD</p>
+        <p>Your Global Education Partner</p>
+        <p style="margin-top:14px;">Students and parents are welcome to contact us for study destinations, admissions, scholarships and visa guidance.</p>
+        <a href="#apply" class="btn">Submit an Application</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <img src="assets/logo-header.png" alt="REIGN STUDY HUB LTD" />
+        <p>International education consultancy for study-abroad admissions, visa pathways and student support.</p>
+        <div class="sub">A subsidiary of PIS INT'L SYNERGY LTD</div>
+      </div>
+      <div class="ft-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#apply">Apply Now</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Destinations</h4>
+        <ul>
+          <li>Canada · United Kingdom</li>
+          <li>Spain · Turkey</li>
+          <li>Poland · Cyprus</li>
+          <li>North Cyprus & more</li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+2348034239813">+234 803 423 9813</a></li>
+          <li><a href="tel:+447480251588">+44 7480 251588</a></li>
+          <li><a href="mailto:reignstudyabroad@gmail.com">reignstudyabroad@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© 2026 REIGN STUDY HUB LTD. All rights reserved.</span>
+      <span>Subsidiary of PIS INT'L SYNERGY LTD · Your Global Education Partner</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/2348034239813" class="wa-float" target="_blank" rel="noopener" title="WhatsApp">💬</a>
+<div class="toast" id="toast"></div>
+
+<script>
+function showReq(id) {
+  document.querySelectorAll('.req-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.req-tab').forEach(t => t.classList.remove('active'));
+  const panel = document.getElementById('req-' + id);
+  if (panel) panel.classList.add('active');
+  document.querySelectorAll('.req-tab').forEach(t => {
+    if (t.textContent.toLowerCase().includes(id === 'uk' ? 'united' : id === 'cyprus' ? 'cyprus' : id)) t.classList.add('active');
+  });
+}
+function toggleDep(show) {
+  const el = document.getElementById('depBox');
+  if (show) el.classList.add('show'); else el.classList.remove('show');
+}
+function checkDependant() {}
+function handleSubmit(e) {
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(e.target).entries());
+  const toast = document.getElementById('toast');
+  const ref = 'RSH-' + Date.now().toString().slice(-8);
+  toast.innerHTML = '<strong>Application Received</strong><br>Thank you, ' + (data.firstName || 'Applicant') + '. Reference: <strong>' + ref + '</strong>. Our team will contact you shortly.';
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 8000);
+  e.target.reset();
+  document.getElementById('depBox').classList.remove('show');
+  return false;
+}
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const t = document.querySelector(this.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); document.getElementById('nav').classList.remove('open'); }
+  });
+});
+</script>
+</body>
+</html>

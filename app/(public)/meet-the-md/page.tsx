@@ -1,0 +1,5 @@
+import Image from '@/components/site-image';
+import { getTeam } from '@/lib/content';
+import { PageHero, CTA, Empty } from '@/components/sections';
+export const metadata={title:'Meet the Founder & Team'};
+export default async function Team(){const members=await getTeam();return <><PageHero eyebrow="Our leadership" title="Meet the people behind Reign"/><section className="section"><div className="container space-y-12">{!members.length&&<Empty message="Team information will be available here soon."/>}{members.map(m=><article key={m.name} className="grid items-start gap-10 md:grid-cols-[280px_1fr]">{m.image_url&&<Image src={m.image_url} alt={m.name} width={333} height={500} className="w-full max-w-[333px] rounded-lg"/>}<div className="max-w-2xl"><div className="eyebrow">{m.role}</div><h2 className="text-3xl">{m.name}</h2><h3 className="mt-8 mb-4 text-lg">{m.role.toLowerCase().includes('founder')?'Message from the Founder':'About '+m.name}</h3><div className="rich-copy">{m.bio}</div></div></article>)}</div></section><CTA/></>}

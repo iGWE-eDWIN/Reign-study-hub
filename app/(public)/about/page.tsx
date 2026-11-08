@@ -1,0 +1,4 @@
+import { getSettings } from '@/lib/content';
+import { CTA, PageHero, Process, SectionHeading, Values } from '@/components/sections';
+export const metadata={title:'About Us',description:'Learn about REIGN STUDY HUB LTD, our vision, mission and student-focused approach.'};
+export default async function About(){const s=await getSettings();return <><PageHero eyebrow="About us" title="Empowering Your Global Education Journey"/><section className="section"><div className="container"><div className="max-w-3xl"><h2 className="mb-6 text-3xl">Your Global Education Partner</h2><div className="rich-copy">{s.about_text}</div><p className="mt-5 text-sm font-semibold text-navy">{s.parent_company}</p></div><div className="mt-12"><Values settings={s}/></div></div></section><section className="section bg-soft"><div className="container"><SectionHeading label="How it works" title="Our Admission Application Process"/><Process settings={s}/></div></section><CTA/></>}

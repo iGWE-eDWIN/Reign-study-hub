@@ -1,0 +1,47 @@
+{
+  "university-course-selection": {
+    "name": "University of Oxford · Radcliffe Camera",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Radcliffe_Camera%2C_Oxfordshire.jpg/960px-Radcliffe_Camera%2C_Oxfordshire.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Radcliffe_Camera,_Oxfordshire.jpg",
+    "author": "Tristan Surtel",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "position": "center 52%"
+  },
+  "admission-assistance": {
+    "name": "University of Cambridge · King's College Chapel",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/20130808_Kings_College_Chapel_01.jpg/1280px-20130808_Kings_College_Chapel_01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:20130808_Kings_College_Chapel_01.jpg",
+    "author": "Dmitry Tonkonog",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "position": "center center"
+  },
+  "scholarship-guidance": {
+    "name": "University of Salamanca · Spain",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/University_of_Salamanca.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:University_of_Salamanca.jpg",
+    "author": "valyag",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "position": "center 42%"
+  },
+  "study-visa-guidance": {
+    "name": "University of Coimbra · Portugal",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/The_University_of_Coimbra_Courtyard_and_Bell_Tower.jpg/960px-The_University_of_Coimbra_Courtyard_and_Bell_Tower.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:The_University_of_Coimbra_Courtyard_and_Bell_Tower.jpg",
+    "author": "Debarshi Ray",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "position": "center 45%"
+  },
+  "pre-departure-support": {
+    "name": "University of Cambridge · King's College",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/20130215_Kings_College_Chapel_Hi-res_01.jpg/1280px-20130215_Kings_College_Chapel_Hi-res_01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:20130215_Kings_College_Chapel_Hi-res_01.jpg",
+    "author": "Dmitry Tonkonog",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "position": "center center"
+  }
+}

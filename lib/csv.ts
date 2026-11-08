@@ -1,0 +1,2 @@
+export function csvCell(value:unknown){let text=typeof value==='object'&&value!==null?JSON.stringify(value):String(value??'');if(/^[\s]*[=+@-]/.test(text))text="'"+text;return `"${text.replace(/"/g,'""')}"`;}
+export function toCsv(rows:Record<string,unknown>[]){if(!rows.length)return '';const columns=[...new Set(rows.flatMap(row=>Object.keys(row)))];return '\uFEFF'+[columns.map(csvCell).join(','),...rows.map(row=>columns.map(c=>csvCell(row[c])).join(','))].join('\r\n');}

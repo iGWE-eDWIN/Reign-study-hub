@@ -1,0 +1,19 @@
+'use client';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import { z } from 'zod';
+import { browserClient } from '@/lib/supabase/browser';
+import { toast } from 'sonner';
+export function AdminAuth({reset=false}:{reset?:boolean}){
+ const[busy,setBusy]=useState(false);const[error,setError]=useState('');const[resetMode,setResetMode]=useState(false);const router=useRouter();
+ async function submit(e:React.FormEvent<HTMLFormElement>){e.preventDefault();setError('');setBusy(true);const form=new FormData(e.currentTarget);try{const client=browserClient();
+  if(reset){const password=z.string().min(12,'Use at least 12 characters.').parse(form.get('password'));if(password!==form.get('confirm_password'))throw new Error('Passwords do not match.');const{error}=await client.auth.updateUser({password});if(error)throw error;toast.success('Password updated.');router.replace('/admin');router.refresh();}
+  else{const email=z.string().trim().email().parse(form.get('email'));
+   if(resetMode){const{error}=await client.auth.resetPasswordForEmail(email,{redirectTo:`${window.location.origin}/auth/callback?next=/admin/reset-password`});if(error)throw error;toast.success('If the account exists, a reset link will be sent.');}
+   else{const password=z.string().min(1).parse(form.get('password'));const{error}=await client.auth.signInWithPassword({email,password});if(error)throw new Error(error.code==='invalid_credentials'?'The email or password does not match an account in this Supabase project. Run npm run admin:reset locally, then use the email and password from .env.local.':error.message);const{data:{user},error:userError}=await client.auth.getUser();if(userError||!user)throw new Error('Could not verify your session. Please sign in again.');const{data}=await client.from('admin_profiles').select('role').eq('user_id',user.id).single();if(data?.role!=='admin'){await client.auth.signOut();throw new Error('This account does not have administrator access.');}router.replace('/admin');router.refresh();}
+  }
+ }catch(error){setError(error instanceof z.ZodError?error.issues[0].message:error instanceof Error?error.message:'Please try again.');}finally{setBusy(false);}}
+ return <form onSubmit={submit} className="mt-8 space-y-5">{!reset&&<div className="field"><label htmlFor="admin-email">Email address</label><input id="admin-email" name="email" type="email" autoComplete="username" required/></div>}{(!resetMode||reset)&&<div className="field"><label htmlFor="admin-password">{reset?'New password':'Password'}</label><input id="admin-password" name="password" type="password" autoComplete={reset?'new-password':'current-password'} required minLength={reset?12:1}/></div>}{reset&&<div className="field"><label htmlFor="confirm-password">Confirm new password</label><input id="confirm-password" name="confirm_password" type="password" autoComplete="new-password" required minLength={12}/></div>}{error&&<p role="alert" className="rounded bg-red-50 p-3 text-sm text-red-800">{error}</p>}<button disabled={busy} className="btn w-full">{busy?'Please wait…':reset?'Set new password':resetMode?'Send reset link':'Sign in'}</button>{!reset&&<button type="button" className="w-full py-2 text-xs text-brand-blue" onClick={()=>{setResetMode(!resetMode);setError('');}}>{resetMode?'Back to sign in':'Forgot your password?'}</button>}<Link href="/" className="block text-center text-xs text-slate-500">Back to website</Link></form>;
+}
+export function Logout(){const router=useRouter();return <button className="admin-link w-full" onClick={async()=>{try{const{error}=await browserClient().auth.signOut();if(error)throw error;router.replace('/admin/login');router.refresh();}catch{toast.error('Could not sign out. Try again.');}}}>Sign out</button>}

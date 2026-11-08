@@ -1,0 +1,76 @@
+{
+  "Canada": {
+    "name": "Toronto skyline, Canada",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Toronto_Skyline%2C_Ontario_Canada.jpg/1280px-Toronto_Skyline%2C_Ontario_Canada.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Toronto_Skyline,_Ontario_Canada.jpg",
+    "author": "Peter_Glyn",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "legacy_image_url": "https://images.unsplash.com/photo-1517935706615-2717063c694e?w=700&q=85"
+  },
+  "Turkey": {
+    "name": "Istanbul, Turkey",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/The_skyline_of_Istanbul.JPG/1280px-The_skyline_of_Istanbul.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:The_skyline_of_Istanbul.JPG",
+    "author": "Thingstodoeverywhere",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "legacy_image_url": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=700&q=85"
+  },
+  "Poland": {
+    "name": "Warsaw, Poland",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Downtown_Warsaw.jpg/1280px-Downtown_Warsaw.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Downtown_Warsaw.jpg",
+    "author": "Peter Heeling / Skitterphoto",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "legacy_image_url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=700&q=85"
+  },
+  "Cyprus": {
+    "name": "Paphos harbour, Cyprus",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Paphos_view.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Paphos_view.jpg",
+    "author": "Tsiapinis",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "legacy_image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=85"
+  },
+  "Germany": {
+    "name": "Berlin, Germany",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Berlin_Skyline_Architecture_City_Germany_Lights.jpg/1280px-Berlin_Skyline_Architecture_City_Germany_Lights.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Berlin_Skyline_Architecture_City_Germany_Lights.jpg",
+    "author": "2197494 / Pixabay",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "legacy_image_url": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=700&q=85"
+  },
+  "Italy": {
+    "name": "Colosseum, Rome, Italy",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Colosseum_of_Rome%2C_Italy.jpg/1280px-Colosseum_of_Rome%2C_Italy.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome,_Italy.jpg",
+    "author": "Wilfredor",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "legacy_image_url": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=700&q=85"
+  },
+  "United Kingdom": {
+    "name": "University of Cambridge · King's College Chapel",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/20130808_Kings_College_Chapel_01.jpg/1280px-20130808_Kings_College_Chapel_01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:20130808_Kings_College_Chapel_01.jpg",
+    "author": "Dmitry Tonkonog",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "position": "center center",
+    "legacy_image_url": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=700&q=85"
+  },
+  "Spain": {
+    "name": "University of Salamanca · Spain",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/University_of_Salamanca.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:University_of_Salamanca.jpg",
+    "author": "valyag",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "position": "center 42%",
+    "legacy_image_url": "https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=700&q=85"
+  }
+}
