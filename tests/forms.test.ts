@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { applicationSchema, appointmentSchema, contactSchema, hasPdfHeader, MAX_PDF_SIZE, nigerianStates, todayInNigeria, validatePdfMetadata } from '../lib/validators/forms';
 import { csvCell, toCsv } from '../lib/csv';
-import { safeHref, whatsappLink } from '../lib/utils';
+import { safeHref, whatsappLink, siteUrl } from '../lib/utils';
 import { contentSchema } from '../lib/admin-config';
 
 const contact = { name: 'Test Applicant', email: 'applicant@example.com', phone: '+2348034239813', subject: 'Study enquiry', message: 'Please help with my study application.' };
@@ -52,4 +52,19 @@ test('admin validation rejects unsafe links, malformed settings and blank saniti
   assert.equal(contentSchema('slides').safeParse(slide).success, true);
   assert.equal(contentSchema('slides').safeParse({ ...slide, cta_link: 'javascript:alert(1)' }).success, false);
   assert.equal(contentSchema('destinations').safeParse({ name: 'Canada', flag_emoji: '', description: '', image_url: '', requirements: 'not a list', sort_order: 0, is_active: true }).success, false);
+});
+
+test('site URL accepts origins and normalises a hostname without a scheme', () => {
+  const previous = process.env.NEXT_PUBLIC_SITE_URL;
+  try {
+    process.env.NEXT_PUBLIC_SITE_URL = ' reignstudyhub.vercel.app ';
+    assert.equal(siteUrl(), 'https://reignstudyhub.vercel.app');
+    process.env.NEXT_PUBLIC_SITE_URL = 'http://localhost:3000/';
+    assert.equal(siteUrl(), 'http://localhost:3000');
+    process.env.NEXT_PUBLIC_SITE_URL = 'https://example.com/admin';
+    assert.throws(() => siteUrl(), /website origin/);
+  } finally {
+    if (previous === undefined) delete process.env.NEXT_PUBLIC_SITE_URL;
+    else process.env.NEXT_PUBLIC_SITE_URL = previous;
+  }
 });

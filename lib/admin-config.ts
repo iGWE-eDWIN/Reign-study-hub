@@ -5,6 +5,7 @@ export type ResourceConfig={title:string;singular:string;fields:AdminField[];col
 const f=(name:string,label:string,kind?:AdminField['kind'],required=false,hint?:string):AdminField=>({name,label,kind,required,hint});
 const published=f('is_published','Published','checkbox');const order=f('sort_order','Display order','number');const active=f('is_active','Active','checkbox');
 export const resources:Record<string,ResourceConfig>={
+ service_enquiries:{title:'Service enquiries',singular:'Service enquiry',fields:[],columns:['full_name','email','service_title','status','created_at','email_sent'],record:true},
  applications:{title:'Applications',singular:'Application',fields:[],columns:['full_name','email','first_choice_country','status','created_at','email_sent'],record:true},
  appointments:{title:'Appointments',singular:'Appointment',fields:[],columns:['full_name','service_type','appointment_date','status','email_sent'],record:true},
  contact_messages:{title:'Messages',singular:'Message',fields:[],columns:['name','subject','is_read','created_at','email_sent'],record:true},

@@ -67,3 +67,13 @@ See `audit/rebuild-audit.md`. Statistics, testimonials, partners, hours and soci
 ## Verification status
 
 See `audit/verification.md` for actual checks and remaining live acceptance steps. A Lighthouse target is not a measured result. Live database, storage, email and admin checks require a configured Supabase project and sender.
+
+## Service-specific enquiries
+
+Run `supabase/migrations/002_service_enquiries.sql` in Supabase SQL Editor **after** the initial migration and before deploying the service enquiry forms. Existing projects should run only this new migration, not rerun `001_initial.sql`.
+
+Each published service links to `/services/[slug]/enquire`. The form is generated from its current title and description on both client and server. Built-in profiles cover Yellow Card, passports, academic selection/admission, scholarship sponsorship, study visas and pre-departure support. Passport corrections and visa refusals reveal conditional detail fields. Supporting documents use the existing private PDF upload flow; Yellow Card enquiries require a passport data page PDF. Other enquiry documents can be supplied when available.
+
+For a new service outside those categories, put an `APPLICATION REQUIREMENTS` heading in the service content and list each required detail or document on its own numbered/bulleted line. The generator recognises explicit requirement items and document names; it does not use an AI model to interpret arbitrary prose. If there are no explicit requirements, it provides a service-labelled requirements enquiry. Review the live preview in the service editor before publishing. Form changes take effect after saving, with server-side validation generated from the published service. Enquiries are available under **Admin → Service enquiries**, with status, notes, private PDF access and CSV export. Email delivery failures do not discard enquiries.
+
+Live acceptance: submit one service enquiry (including Yellow Card PDF), inspect it in the admin, test PDF access and email status, then publish a new service with an explicit requirements list and verify its generated form. Live database, storage and email acceptance require a configured Supabase project.

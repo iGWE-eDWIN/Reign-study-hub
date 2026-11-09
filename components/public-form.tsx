@@ -13,7 +13,7 @@ import seed from '@/lib/seed-content.json';
 import type { Destination, Option } from '@/types/content';
 interface TurnstileApi {render:(node:HTMLElement,options:{sitekey:string;callback:(token:string)=>void;'expired-callback':()=>void;'error-callback':()=>void})=>string;reset:(id:string)=>void;remove:(id:string)=>void}
 declare global {interface Window {turnstile?:TurnstileApi}}
-function Captcha({onToken,resetKey}:{onToken:(token:string)=>void;resetKey:number}){
+export function Captcha({onToken,resetKey}:{onToken:(token:string)=>void;resetKey:number}){
  const el=useRef<HTMLDivElement>(null);const widget=useRef<string|undefined>(undefined);const [ready,setReady]=useState(false);const sitekey=process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
  useEffect(()=>{if(!ready||!el.current||!sitekey||!window.turnstile)return;widget.current=window.turnstile.render(el.current,{sitekey,callback:onToken,'expired-callback':()=>onToken(''),'error-callback':()=>onToken('')});return()=>{if(widget.current)window.turnstile?.remove(widget.current);widget.current=undefined;};},[ready,sitekey,onToken]);
  useEffect(()=>{if(widget.current)window.turnstile?.reset(widget.current);},[resetKey]);
