@@ -14,7 +14,7 @@ export default function SiteImage({ src, alt, onError, unoptimized, ...props }: 
       {...props}
       src={failed ? '/assets/image-placeholder.svg' : src}
       alt={failed ? '' : alt}
-      unoptimized={unoptimized ?? externalPhoto}
+      unoptimized={unoptimized ?? (externalPhoto || (typeof src === 'string' && src.startsWith('/api/testimonial-portraits/')))}
       onError={event => {
         if (!failed) setFailedSource(src);
         onError?.(event);

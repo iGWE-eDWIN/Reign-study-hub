@@ -18,9 +18,11 @@ export async function deleteRecord(resource:string,id:string):Promise<ActionResu
  const{client}=await requireAdmin();if(!Object.hasOwn(resources,resource)||resource==='site_settings')return {ok:false,error:'This record cannot be deleted.'};
  z.string().uuid().parse(id);
  let documentPath:string|undefined;
+ const portraitPath=resource==='testimonials'?`portraits/${id}`:null;
  if(['applications','service_enquiries'].includes(resource)){const {data}=await client.from(resource).select('document_path').eq('id',id).single();documentPath=data?.document_path;}
  const{error}=await client.from(resource).delete().eq('id',id);if(error)return {ok:false,error:'Delete failed. Please try again.'};
  if(documentPath){const{error:storageError}=await client.storage.from('documents').remove([documentPath]);if(storageError){console.error('Document cleanup failed',id,storageError.message);refresh();return {ok:true,error:'Record deleted, but its PDF could not be removed. Remove the orphaned file in Supabase Storage.'};}}
+ if(portraitPath){const{error:portraitError}=await client.storage.from('testimonial-portraits').remove([portraitPath]);if(portraitError){console.error('Portrait cleanup failed',id,portraitError.message);refresh();return {ok:true,error:'Record deleted, but its portrait could not be removed. Remove the orphaned file in Supabase Storage.'};}}
  refresh();return {ok:true};
 }
 export async function updateSubmission(resource:string,id:string,input:Record<string,unknown>):Promise<ActionResult>{
